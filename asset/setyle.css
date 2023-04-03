@@ -7,9 +7,103 @@
 
 html {
   font-size: 62.5%;
+  height: 5000px;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+}
+
+/* commot */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  min-width: calc(100vh - 65px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li .active {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #152427;
+}
+
+li .active::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: #143c3c;
+  bottom: 0;
+  left: 16px;
+}
+
+.header .fiexd {
+  position: sticky;
+  top: -20px;
+}
+
+/* header  */
+
+.header {
+  z-index: 1;
+  background: #efefef;
+  font-family: "Public Sans";
+}
+
+.nav {
+  padding: 28px 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__navbar {
+  margin-left: auto;
+}
+
+.nav__navbar-ul {
+  display: flex;
+}
+
+.nav__navbar-link {
+  padding: 16px;
+  margin: 0 4px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #575d5e;
+}
+
+.nav__navbar-link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.btn {
+  align-items: center;
+  margin-left: 69px;
+}
+
+.btn-header {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 53px;
+  color: #fff;
+  max-width: 173px;
+  background: #143c3c;
+  border: 1.5px solid #143c3c;
+  border-radius: 40px;
+  font-weight: 500;
+}
+
+.btn-header:hover {
+  background: transparent;
+  color: #10375c;
 }
