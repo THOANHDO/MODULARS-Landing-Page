@@ -18,6 +18,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   background: #efefef;
+  overflow-x: hidden;
 }
 
 /* commot */
